@@ -6,9 +6,9 @@ import HamburgerMenu from "./HamburgerMenu";
 
 function Header() {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <HeaderTop />
-      <div className="shadow-lg">
+      <div className={`shadow-lg bg-white`}>
         <div className="container max-lg:px-4 mx-auto py-3 flex justify-between items-center">
           <Logo />
           <div className="flex items-center gap-1 max-lg:hidden">

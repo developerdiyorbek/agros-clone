@@ -186,3 +186,88 @@ export const heroInformation = [
     desc: "Qishloq xo'jaligi texnikalarini shikastlanishdan sug'urtalash. Ushbu mahsulot sizning mulkiy manfaatlaringizni sug'urtalashga imkon beradi",
   },
 ];
+
+export const onlineInsurance = [
+  {
+    id: 1,
+    header: "TVEJMSQ (OSAGO)",
+    title:
+      "Avtotransport vositalari egalarining fuqorolik javobgarligini majburiy sugʻurta qilish",
+  },
+  {
+    id: 2,
+    header: "TFJMSQ",
+    title: "Tashuvchining fuqorolik javobgarligini majburiy sugʻurta qilish",
+  },
+  {
+    id: 3,
+    header: "Ish beruvchi",
+    title: "Ish beruvchining fuqorolik javobgarligini majburiy sugʻurta qilish",
+  },
+  {
+    id: 4,
+    title: "Jismoniy shaxslarni kompleks sugʻurta qilish",
+  },
+  {
+    id: 5,
+    title: "Baxtsiz hodisalardan oilaviy ehtiyot shart sugʻurta qilish",
+  },
+  {
+    id: 6,
+    title: "Sportchilarni baxtsiz hodisalardan ehtiyot shart sugʻurta qilish",
+  },
+  {
+    id: 7,
+    title: "Baxtsiz hodisalardan ehtiyot shart sugʻurta qilish",
+  },
+  {
+    id: 8,
+    title:
+      "Mehmonxonada istiqomat qiluvchi shaxslarni kompleks sugʻurta qilish",
+  },
+  {
+    id: 9,
+    title: "Yuqumli kasalliklardan ehtiyot shart sugʻurta qilish",
+  },
+  {
+    id: 10,
+    title:
+      "AGUS - Avtotransport vositasiga oʻrnatilgan gaz uskunasidan foydalanish",
+  },
+  {
+    id: 11,
+    title: "“POSITIVE” - xodim ishini yo‘qotishidan sug‘urta qilish",
+  },
+  {
+    id: 12,
+    title: "Avtotransport vositalarini sugʻurta qilish (KASKO)",
+  },
+  {
+    id: 13,
+    title: "Talabalarni baxtsiz hodisalardan sugʻurta qilish",
+  },
+  {
+    id: 14,
+    title:
+      "Bolalarni maktab ta'tili davrida oromgoh va boshqa dam olish maskanlarida",
+  },
+  {
+    id: 15,
+    title: "O'quvchilarni baxtsiz hodisalardan sugʻurta qilish",
+  },
+  {
+    id: 16,
+    title:
+      "Ommaviy tadbir tomoshabinlarini baxtsiz hodisalardan sugʻurta qilish",
+  },
+  {
+    id: 17,
+    title:
+      "Xalqaro yoʻnalishda qatnovchi avtobus yoʻlovchilarini baxtsiz hodisalardan ehtiyot shart",
+  },
+  {
+    id: 18,
+    title:
+      "Ipoteka kreditlari bo‘yicha garovga qo‘yilayotgan uy-joyni sug‘urta qilish",
+  },
+];

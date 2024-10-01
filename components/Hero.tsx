@@ -9,10 +9,11 @@ import { heroInformation } from "@/constants";
 
 function Hero() {
   return (
-    <div className="w-full">
+    <div className="w-full max-md:mb-4 mb-32">
       <div className="hidden lg:block">
         <Swiper
           spaceBetween={30}
+          loop={true}
           effect="fade"
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           modules={[EffectFade]}
@@ -43,6 +44,7 @@ function Hero() {
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
+          loop={true}
           autoplay={true}
           keyboard={{
             enabled: true,
