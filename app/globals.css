@@ -12,3 +12,36 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
+.bg-facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.bg-telegram {
+  background-color: #4099ff;
+  color: #fff;
+}
+
+.bg-phone {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.bg-red-dark {
+  background-color: #da4453;
+  color: #fff;
+}
+
+.bg-instagram {
+  background: radial-gradient(
+      circle farthest-corner at 28% 100%,
+      #fcdf8f 0%,
+      #fbd377 10%,
+      #fa8e37 22%,
+      #f73344 35%,
+      transparent 65%
+    ),
+    linear-gradient(145deg, #3051f1 10%, #c92bb7 70%);
+  color: #fff;
+}

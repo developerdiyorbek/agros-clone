@@ -35,8 +35,8 @@ function Section2() {
           ))}
         </div>
       </div>
-      <div className="bg-[#28A753] max-md:block p-[30px] text-center hidden text-white text-[16px]">
-        <p>
+      <div className="bg-[#28A753] max-md:block p-[30px] text-center hidden text-white ">
+        <p className="text-[15px] sm:text-[16px]">
           “Uzinsurance” universal sug`urta kompaniyalaridan biri bo`lib, barcha
           turdagi avtosug`urta, Uzagrosug`urta va boshqa yuridik va jismoniy
           shaxslarga 140 dan ortiq sug`urta qilish xizmatlarini ko`rsatadi.

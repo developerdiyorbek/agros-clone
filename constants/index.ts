@@ -325,3 +325,31 @@ export const collections = [
     title: "Davlat dasturi ijrosi",
   },
 ];
+
+export const footerIcons = [
+  {
+    id: 1,
+    title: "Aholi",
+    src: "/aholiIcon.png",
+  },
+  {
+    id: 2,
+    title: "Avtomobil",
+    src: "/carIcon.png",
+  },
+  {
+    id: 3,
+    title: "Asosiy",
+    src: "/mainIcon.png",
+  },
+  {
+    id: 4,
+    title: "Bog'lanish",
+    src: "/support.png",
+  },
+  {
+    id: 5,
+    title: "Boshqalar",
+    src: "/insurance.png",
+  },
+];
