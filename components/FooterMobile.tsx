@@ -74,7 +74,7 @@ function FooterMobile() {
           <Link
             key={item.id}
             href={"#"}
-            className="flex items-center px-3 flex-col pt-2 min-w-[60px]"
+            className="flex items-center px-3 flex-col pt-2 pb-3 min-w-[60px]"
           >
             <Image
               src={item.src}

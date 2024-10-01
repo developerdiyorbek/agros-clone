@@ -1,4 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 interface IItem {
   id: number;
@@ -7,8 +12,15 @@ interface IItem {
 }
 
 function CardItem({ item }: { item: IItem }) {
+  useEffect(() => {
+    aos.init();
+  }, []);
+
   return (
-    <div className="min-h-[230px] hover:scale-105 transition-scale duration-300 relative rounded-[20px] gap-6 shadow-custom text-center cursor-pointer group">
+    <div
+      className="min-h-[230px] hover:scale-105 transition-scale  duration-300 relative rounded-[20px] gap-6 shadow-custom text-center cursor-pointer group"
+      data-aos="fade-up"
+    >
       {item.header && (
         <h4 className="rounded-t-[20px] w-full absolute text-white bg-[#E6BC62] py-[2px] text-[12px]">
           {item.header}

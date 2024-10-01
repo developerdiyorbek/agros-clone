@@ -6,7 +6,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 function FooterTop() {
   return (
-    <div className="bg-[#006121cc] py-10 max-md:hidden">
+    <div className="bg-[#006121cc] py-20 max-md:hidden">
       <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5">
         <div className="flex flex-col gap-4">
           <Link href={"/"}>
