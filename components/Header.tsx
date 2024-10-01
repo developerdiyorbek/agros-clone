@@ -9,9 +9,9 @@ function Header() {
     <header>
       <HeaderTop />
       <div className="shadow-lg">
-        <div className="container max-md:px-4 mx-auto py-3 flex justify-between items-center">
+        <div className="container max-lg:px-4 mx-auto py-3 flex justify-between items-center">
           <Logo />
-          <div className="flex items-center gap-1 max-md:hidden">
+          <div className="flex items-center gap-1 max-lg:hidden">
             {links.map((link) => (
               <DropDownItem
                 key={link.id}

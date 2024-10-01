@@ -173,3 +173,16 @@ export const hamburgerLinks = [
     link: "Sug'urta hodisasi",
   },
 ];
+
+export const heroInformation = [
+  {
+    id: 1,
+    title: "Aholi sug'urtasi",
+    desc: "Bugungi kunda, O'zagrosugurta AJ kompanisi tomonidan aholi hayoti va salomatligini sug'urtalashga oid qator sug’urta mahsulotlari ishlab chiqilib, muvaffaqiyatli tarzda hayotga tatbiq qilinmoqda",
+  },
+  {
+    id: 2,
+    title: "Qishloq xo'jaligi texnikalarini sug'urtalash",
+    desc: "Qishloq xo'jaligi texnikalarini shikastlanishdan sug'urtalash. Ushbu mahsulot sizning mulkiy manfaatlaringizni sug'urtalashga imkon beradi",
+  },
+];

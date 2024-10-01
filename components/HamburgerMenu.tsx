@@ -10,7 +10,7 @@ function HamburgerMenu() {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="hidden max-md:block">
+    <div className="hidden max-lg:block">
       <button
         className="text-[#2A9E43] transition-colors hover:text-gray-500"
         onClick={() => setActive(true)}

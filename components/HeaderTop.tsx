@@ -7,7 +7,7 @@ import { TfiYoutube } from "react-icons/tfi";
 
 function HeaderTop() {
   return (
-    <div className="bg-[#2A9E43] py-2 text-white md:block hidden">
+    <div className="bg-[#2A9E43] py-2 text-white lg:block hidden">
       <div className="container mx-auto flex items-center justify-between text-[14px]">
         <div className="flex items-center gap-4 ">
           <Link
