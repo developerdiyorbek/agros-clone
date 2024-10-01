@@ -8,7 +8,7 @@ interface IItem {
 
 function CardItem({ item }: { item: IItem }) {
   return (
-    <div className="min-h-[230px] relative rounded-[20px] gap-6 shadow-custom text-center">
+    <div className="min-h-[230px] hover:scale-105 transition-scale duration-300 relative rounded-[20px] gap-6 shadow-custom text-center cursor-pointer group">
       {item.header && (
         <h4 className="rounded-t-[20px] w-full absolute text-white bg-[#E6BC62] py-[2px] text-[12px]">
           {item.header}
@@ -22,7 +22,9 @@ function CardItem({ item }: { item: IItem }) {
         />
       </div>
 
-      <p className="text-[15px] px-1 mb-2 max-md:text-[14px]">{item.title}</p>
+      <p className="text-[15px] px-1 mb-2 max-md:text-[14px] group-hover:text-[#28a745] transition-colors">
+        {item.title}
+      </p>
     </div>
   );
 }

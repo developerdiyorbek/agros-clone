@@ -7,7 +7,7 @@ import React from "react";
 function Section2() {
   return (
     <>
-      <div className="container mx-auto max-lg:px-4 max-lg:mb-5">
+      <div className="container mx-auto max-lg:px-4 max-lg:mb-5 mb-12">
         <div className="lg:text-center lg:mb-10 max-lg:flex max-lg:justify-between max-lg:mb-4">
           <h2 className="mb-4 text-[25px] text-[#303030] hidden lg:block">
             Online sug&apos;urta polislari
@@ -17,12 +17,12 @@ function Section2() {
             polislarini online xarid qilishinggiz mumkun.
           </p>
 
-          <h2 className="text-[16px] font-semibold text-[#303030]">
+          <h2 className="text-[16px] font-semibold text-[#303030] block lg:hidden">
             Sug&apos;urta polislar
           </h2>
           <Link
             href={"#"}
-            className="flex items-center gap-[1px] text-[#309E5F] text-[12px]"
+            className="flex items-center gap-[1px] text-[#309E5F] text-[12px] block lg:hidden"
           >
             <span>Barchasini ko&apos;rish</span>
             <ChevronRight size={14} />
@@ -35,7 +35,7 @@ function Section2() {
           ))}
         </div>
       </div>
-      <div className="bg-[#28A753] p-[30px] text-center max-lg:block hidden text-white text-[16px]">
+      <div className="bg-[#28A753] max-md:block p-[30px] text-center hidden text-white text-[16px]">
         <p>
           “Uzinsurance” universal sug`urta kompaniyalaridan biri bo`lib, barcha
           turdagi avtosug`urta, Uzagrosug`urta va boshqa yuridik va jismoniy

@@ -271,3 +271,57 @@ export const onlineInsurance = [
       "Ipoteka kreditlari bo‘yicha garovga qo‘yilayotgan uy-joyni sug‘urta qilish",
   },
 ];
+
+export const aboutCompany = [
+  {
+    id: 1,
+    title: "Kompaniya tuzilmasi",
+  },
+  {
+    id: 2,
+    title: "Kuzatuv kengashi",
+  },
+  {
+    id: 3,
+    title: "Rahbariyat",
+  },
+  {
+    id: 4,
+    title: "Markaziy apparat",
+  },
+  {
+    id: 5,
+    title: "Filiala boshqaruvchilari",
+  },
+  {
+    id: 6,
+    title: "Sug'urta markazlari",
+  },
+];
+
+export const collections = [
+  {
+    id: 1,
+    title: "Yagona sug'urta portali",
+  },
+  {
+    id: 2,
+    title: "Vakansiya",
+  },
+  {
+    id: 3,
+    title: "Ko'p so'raladigan savollar",
+  },
+  {
+    id: 4,
+    title: "Murojaatlar",
+  },
+  {
+    id: 5,
+    title: "Yoshlar siyosati",
+  },
+  {
+    id: 6,
+    title: "Davlat dasturi ijrosi",
+  },
+];
