@@ -52,7 +52,10 @@ function Page() {
           1. Sugʻurta qildiruvchining pasport ma'lumotlari.
         </h2>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-5 px-4"
+          >
             <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
               <FormField
                 control={form.control}
