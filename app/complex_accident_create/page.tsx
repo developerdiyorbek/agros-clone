@@ -66,7 +66,7 @@ function Page() {
                       <Input
                         placeholder="AA"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
                         maxLength={2}
                       />
                     </FormControl>
@@ -86,7 +86,7 @@ function Page() {
                         placeholder="1234567"
                         type="number"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
                       />
                     </FormControl>
                   </FormItem>
@@ -105,7 +105,7 @@ function Page() {
                         placeholder="32605988550018"
                         type="number"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43] uppercase"
                       />
                     </FormControl>
                   </FormItem>
@@ -137,7 +137,7 @@ function Page() {
                       <Input
                         type="text"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
                     </FormControl>
                   </FormItem>
@@ -155,7 +155,7 @@ function Page() {
                       <Input
                         type="date"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
                     </FormControl>
                   </FormItem>
@@ -173,7 +173,7 @@ function Page() {
                       <Input
                         type="text"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
                     </FormControl>
                   </FormItem>
@@ -193,7 +193,7 @@ function Page() {
                       <Input
                         type="text"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
                     </FormControl>
                   </FormItem>
@@ -212,7 +212,7 @@ function Page() {
                         defaultValue={field.value}
                         onValueChange={field.onChange}
                       >
-                        <SelectTrigger className="border-[1px] border-[#d2d8dd] rounded-[15px] h-[43px] text-[#292929] focus:border-[#2A9E43] pl-2 outline-none font-bold text-[15px]">
+                        <SelectTrigger className="border-[1px] border-[#d2d8dd] rounded-[15px] h-[43px] text-[#292929] focus:border-[#2A9E43] pl-2 outline-none font-medium text-[15px]">
                           <SelectValue placeholder="" />
                         </SelectTrigger>
                         <SelectContent>
@@ -266,7 +266,7 @@ function Page() {
                       <Input
                         type="text"
                         {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
                     </FormControl>
                   </FormItem>
@@ -285,7 +285,7 @@ function Page() {
                         defaultValue={field.value}
                         onValueChange={field.onChange}
                       >
-                        <SelectTrigger className="border-[1px] border-[#d2d8dd] rounded-[15px] h-[43px] text-[#292929] focus:border-[#2A9E43] pl-2 outline-none font-bold text-[15px]">
+                        <SelectTrigger className="border-[1px] border-[#d2d8dd] rounded-[15px] h-[43px] text-[#292929] focus:border-[#2A9E43] pl-2 outline-none font-medium text-[15px]">
                           <SelectValue placeholder="---" />
                         </SelectTrigger>
                         <SelectContent>
