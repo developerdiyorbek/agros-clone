@@ -437,7 +437,7 @@ function Page() {
                         />
                         <Label htmlFor="uzum" className="cursor-pointer">
                           <Image
-                            src={"/apelsin-logo.png"}
+                            src={"/uzum.png"}
                             alt="uzum"
                             width={78}
                             height={24}
