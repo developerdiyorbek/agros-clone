@@ -20,32 +20,30 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { regions, relationships } from "@/constants";
-import { complexAccidentSchema } from "@/lib/validation";
+import { familyAccidentSchema } from "@/lib/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 function Page() {
-  const form = useForm<z.infer<typeof complexAccidentSchema>>({
-    resolver: zodResolver(complexAccidentSchema),
+  const form = useForm<z.infer<typeof familyAccidentSchema>>({
+    resolver: zodResolver(familyAccidentSchema),
     defaultValues: {
       pasportRaqam: "",
       passportSeriya: "",
       jshshir: "",
       FIO: "",
-      birthday: "",
       manzil: "",
       hudud: "",
       qarindoshFIO: "",
       qarindoshlikDarajasi: "",
-      sugurtaManzil: "",
       telefonRaqam: "",
       tolovturi: "payme",
     },
   });
 
-  function onSubmit(values: z.infer<typeof complexAccidentSchema>) {
+  function onSubmit(values: z.infer<typeof familyAccidentSchema>) {
     console.log(values);
   }
 
@@ -131,7 +129,7 @@ function Page() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <FormField
                 control={form.control}
                 name="FIO"
@@ -143,24 +141,6 @@ function Page() {
                     <FormControl>
                       <Input
                         type="text"
-                        {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="birthday"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-[15px] text-[#292929] font-normal">
-                      Tug'ilgan kun
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="date"
                         {...field}
                         className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
                       />
@@ -190,24 +170,6 @@ function Page() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <FormField
                 control={form.control}
-                name="sugurtaManzil"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="text-[15px] text-[#292929] font-normal">
-                      Sug‘urtalangan uy-joy manzili
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        type="text"
-                        {...field}
-                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-medium rounded-[15px] h-[43px] focus:border-[#2A9E43]"
-                      />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
                 name="hudud"
                 render={({ field }) => (
                   <FormItem className="flex flex-col">
@@ -234,27 +196,27 @@ function Page() {
                   </FormItem>
                 )}
               />
-            </div>
 
-            <FormField
-              control={form.control}
-              name="telefonRaqam"
-              render={({ field }) => (
-                <FormItem className="md:max-w-[350px]">
-                  <FormLabel className="text-[15px] text-[#292929] font-normal">
-                    Telefon raqam
-                  </FormLabel>
-                  <FormControl>
-                    <Input
-                      type="text"
-                      placeholder="998 99 999 99 99"
-                      {...field}
-                      className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
-                    />
-                  </FormControl>
-                </FormItem>
-              )}
-            />
+              <FormField
+                control={form.control}
+                name="telefonRaqam"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-[15px] text-[#292929] font-normal">
+                      Telefon raqam
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        type="text"
+                        placeholder="998 99 999 99 99"
+                        {...field}
+                        className="border-[1px] border-[#d2d8dd] text-[#292929] font-bold rounded-[15px] h-[43px] focus:border-[#2A9E43]"
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <h4 className="mb-3 font-semibold text-[15px]">
               Sug‘urtalangan shaxslar:
@@ -310,7 +272,7 @@ function Page() {
             </div>
 
             <h4 className="mb-3 font-semibold  text-[15px]">
-              8. To'lov turini tanlang
+              2. To'lov turini tanlang
             </h4>
 
             <FormField

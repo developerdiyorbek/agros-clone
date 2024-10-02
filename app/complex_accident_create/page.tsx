@@ -10,6 +10,8 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
   Select,
   SelectContent,
@@ -20,6 +22,7 @@ import {
 import { regions, relationships } from "@/constants";
 import { complexAccidentSchema } from "@/lib/validation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -38,6 +41,7 @@ function Page() {
       qarindoshlikDarajasi: "",
       sugurtaManzil: "",
       telefonRaqam: "",
+      tolovturi: "payme",
     },
   });
 
@@ -304,6 +308,90 @@ function Page() {
                 )}
               />
             </div>
+
+            <h4 className="mb-3 font-semibold  text-[15px]">
+              8. To'lov turini tanlang
+            </h4>
+
+            <FormField
+              control={form.control}
+              name="tolovturi"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <RadioGroup
+                      value={field.value}
+                      onValueChange={field.onChange}
+                      className="flex items-center gap-2"
+                    >
+                      <div
+                        className={`flex cursor-pointer rounded items-center border-[1px] px-2 py-2 space-x-2 ${
+                          field.value === "payme"
+                            ? "border-[#2A9E43]"
+                            : "border-white"
+                        }`}
+                      >
+                        <RadioGroupItem
+                          value="payme"
+                          className="hidden"
+                          id="payme"
+                        />
+                        <Label htmlFor="payme" className="cursor-pointer">
+                          <Image
+                            src={"/payme.png"}
+                            alt="payme"
+                            width={78}
+                            height={24}
+                          />
+                        </Label>
+                      </div>
+                      <div
+                        className={`flex cursor-pointer rounded items-center border-[1px] px-2 py-2 space-x-2 ${
+                          field.value === "uzum"
+                            ? "border-[#2A9E43]"
+                            : "border-white"
+                        }`}
+                      >
+                        <RadioGroupItem
+                          value="uzum"
+                          className="hidden"
+                          id="uzum"
+                        />
+                        <Label htmlFor="uzum" className="cursor-pointer">
+                          <Image
+                            src={"/uzum.png"}
+                            alt="uzum"
+                            width={78}
+                            height={24}
+                          />
+                        </Label>
+                      </div>
+                      <div
+                        className={`flex cursor-pointer rounded items-center border-[1px] px-2 py-2 space-x-2 ${
+                          field.value === "click"
+                            ? "border-[#2A9E43]"
+                            : "border-white"
+                        }`}
+                      >
+                        <RadioGroupItem
+                          value="click"
+                          className="hidden"
+                          id="click"
+                        />
+                        <Label htmlFor="click" className="cursor-pointer">
+                          <Image
+                            src={"/click.png"}
+                            alt="click"
+                            width={78}
+                            height={24}
+                          />
+                        </Label>
+                      </div>
+                    </RadioGroup>
+                  </FormControl>
+                </FormItem>
+              )}
+            />
           </form>
         </Form>
       </FormWrapper>
