@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import Section2 from "@/components/Section2";
+import Hero from "@/components/shared/Hero";
+import Section2 from "@/components/shared/Section2";
 
 function Page() {
   return (

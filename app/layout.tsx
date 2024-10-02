@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ChildProps } from "@/types";
 import { Montserrat } from "next/font/google";
-
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -12,7 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://diyordemy.uz"),
+  metadataBase: new URL("https://agros-clone.vercel.app"),
   title: "O'zagrosug'urta aksiyadorlik jamiyati",
   description:
     "O‘zagrosug‘urta aksiyadorlik jamiyati 1997 yil 25 fevralda O‘zbekiston Respublikasi Prezidentining 1713-sonli farmoniga asosan tashkil etilgan.",

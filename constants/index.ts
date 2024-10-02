@@ -353,3 +353,93 @@ export const footerIcons = [
     src: "/insurance.png",
   },
 ];
+
+export const regions = [
+  {
+    id: 1,
+    title: "Andijon viloyati",
+  },
+  {
+    id: 2,
+    title: "Buxoro viloyati",
+  },
+  {
+    id: 3,
+    title: "Jizzax viloyati",
+  },
+  {
+    id: 4,
+    title: "Qashqadaryo viloyati",
+  },
+  {
+    id: 5,
+    title: "Navoiy viloyati",
+  },
+  {
+    id: 6,
+    title: "Namangan viloyati",
+  },
+  {
+    id: 7,
+    title: "Samarqand viloyati",
+  },
+  {
+    id: 8,
+    title: "Sirdaryo viloyati",
+  },
+  {
+    id: 9,
+    title: "Surxondaryo viloyati",
+  },
+  {
+    id: 10,
+    title: "Toshkent viloyati",
+  },
+  {
+    id: 11,
+    title: "Farg'ona viloyati",
+  },
+  {
+    id: 12,
+    title: "Xorazm viloyati",
+  },
+  {
+    id: 13,
+    title: "Toshkent shahar",
+  },
+  {
+    id: 14,
+    title: "Qoraqalpog'iston Respublikasi",
+  },
+];
+
+export const relationships = [
+  {
+    id: 1,
+    title: "Ota",
+  },
+  {
+    id: 2,
+    title: "Ona",
+  },
+  {
+    id: 3,
+    title: "Turmush o'rtog'i",
+  },
+  {
+    id: 4,
+    title: "Aka/Uka",
+  },
+  {
+    id: 5,
+    title: "Opa/Singil",
+  },
+  {
+    id: 6,
+    title: "Qizi",
+  },
+  {
+    id: 7,
+    title: "O'g'li",
+  },
+];

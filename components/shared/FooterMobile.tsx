@@ -78,7 +78,7 @@ function FooterMobile() {
           >
             <Image
               src={item.src}
-              alt={item.title}
+              alt={`img${item.id}`}
               width={28}
               height={28}
               className="mb-1"
